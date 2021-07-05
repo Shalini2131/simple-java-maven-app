@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("C:/Users/Shalini_Kallepalli/Documents/My Learning/Jenkins/simple-java-maven-app") {
+                dir("C:/Program Files/Jenkins/workspace/jenkins-pipeline-demo") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             }
